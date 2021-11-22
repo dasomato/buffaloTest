@@ -1,8 +1,4 @@
 .babelrc
-.env
-.postcss.config.js
-.buffalo.dev.yml
-.dockerignore
 go.mod
 go.sum
 .keep
