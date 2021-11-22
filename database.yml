@@ -1,14 +1,27 @@
 ---
 development:
-  dialect: postgres
-  database: test_project_development
-  user: postgres
-  password: postgres
+  dialect: mysql
+  database: test
+  user: test
+  password: test123
   host: 127.0.0.1
+  port: 3306
   pool: 5
 
 test:
-  url: {{envOr "TEST_DATABASE_URL" "postgres://postgres:postgres@127.0.0.1:5432/test_project_test?sslmode=disable"}}
+  dialect: mysql
+  database: test
+  user: test
+  password: test123
+  host: 127.0.0.1
+  port: 3306
+  pool: 5
 
 production:
-  url: {{envOr "DATABASE_URL" "postgres://postgres:postgres@127.0.0.1:5432/test_project_production?sslmode=disable"}}
+  dialect: mysql
+  database: test
+  user: test
+  password: test123
+  host: 127.0.0.1
+  port: 3306
+  pool: 5
